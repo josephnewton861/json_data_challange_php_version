@@ -8,7 +8,6 @@
       $title_link = $data['attachments'][0]['title_link'];
        echo $title;
        echo $image;
-       echo $title_link;
    }
 
 ?>
