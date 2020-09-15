@@ -46,9 +46,9 @@
               src="<?php echo $image; ?>"
             />
             <?php if ($title == null || $image == null || $title_link == null){echo "";} else echo "<p>Click the link to read more:</p>" ?>
-            <a class="link" href="<?php $title_link; ?>">
+        <a class="link" href="<?php echo $title_link; ?>">
             <?php echo $title_link ?>
-            </a>
+         </a>
           </div>
         </div>
         <?php endforeach; ?>
