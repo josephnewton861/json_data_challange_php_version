@@ -1,6 +1,7 @@
 <?php
     $json = file_get_contents('news.json');
     $allData = json_decode($json, true);
+    error_reporting(0);
 
 //    foreach($allData as $data) {
 //       $title = $data['attachments'][0]['title'];
@@ -20,8 +21,25 @@
     <title>Kids_insights_challenge</title>
 </head>
 <body>
-<div class="container" >
-<h1>Kids Insights Challenge<h1>
+    <h1 class="header">Kids Insights Challenge<h1>
+    <div class="container" >
+    <div class="row">
+    <?php foreach($allData as $data): ?>
+    <div class="col-12 col-md-6">
+    <div class="card p-4 mb-3 mt-3 mb-3 rounded-top" style="width: 25rem" style="margin-right: 100px" >
+        <?php if ($data['attachments'][0]['title'] == null || $data['attachments'][0]['image_url'] == null || $data['attachments'][0]['original_url'] == null){echo "This card is unfortunately empty";} ?>
+    <u><h2 class="h4 mb-0 pb-3" style="text-align: center">
+    <?php  echo $data['attachments'][0]['title'] ?>
+    </h2></u>
+<img class="img-fluid pb-3" src="<?php echo $data['attachments'][0]['image_url']; ?>">
+<?php if ($data['attachments'][0]['title'] == null || $data['attachments'][0]['image_url'] == null || $data['attachments'][0]['original_url'] == null){echo "";} else echo "<p>Click the link to read more:</p>" ?>
+    <a class="link" href="<?php echo $data['attachments'][0]['image_url']; ?>">
+    <?php echo $data['attachments'][0]['original_url'] ?>
+    </a>
+    </div>
+    </div>
+    <?php endforeach; ?>
+    </div>
 </div>
     
 </body>
