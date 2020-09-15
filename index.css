@@ -1,12 +1,13 @@
 .header {
   margin-top: 1rem;
+  font-size: 2.5em;
   text-align: center;
   font-weight: bold;
   width: 100%;
   height: 10vh;
   color: white;
   background-color: rgba(0, 0, 0, 0.719);
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 }
 
 .body {
@@ -19,4 +20,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100ch;
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    font-size: 1.5em;
+    margin-left: 2em;
+    margin-top: 1em;
+  }
 }

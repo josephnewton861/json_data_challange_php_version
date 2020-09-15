@@ -21,7 +21,7 @@
     <title>Kids_insights_challenge</title>
 </head>
 <body class="body">
-    <h1 class="header">Kids Insights Challenge<h1>
+    <p class="header">Kids Insights Challenge</p>
     <div class="container" >
     <div class="row">
     <?php foreach($allData as $data): ?>
