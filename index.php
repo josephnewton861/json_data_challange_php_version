@@ -1,9 +1,14 @@
 <?php
     $json = file_get_contents('news.json');
-    $data = json_decode($json, true);
+    $allData = json_decode($json, true);
 
-   echo '<pre>';
-   print_r($data);
-   echo '</pre>';
+   foreach($allData as $data) {
+      $title = $data['attachments'][0]['title'];
+        $image = $data['attachments'][0]['image_url'];
+      $title_link = $data['attachments'][0]['title_link'];
+       echo $title;
+       echo $image;
+       echo $title_link;
+   }
 
 ?>
