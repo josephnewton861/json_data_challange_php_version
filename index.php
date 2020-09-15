@@ -18,10 +18,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"href="index.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <title>Kids_insights_challenge</title>
 </head>
 <body class="body">
-    <p class="header">Kids Insights Challenge</p>
+    <p class="header">Kids Insights Challenge <i class="icon-code"></i> </p>
+    
     <div class="container" >
     <div class="row">
     <?php foreach($allData as $data): ?>
