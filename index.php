@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css"href="index.css">
     <title>Kids_insights_challenge</title>
 </head>
-<body>
+<body class="body">
     <h1 class="header">Kids Insights Challenge<h1>
     <div class="container" >
     <div class="row">
@@ -33,7 +33,7 @@
     </h2></u>
 <img class="img-fluid pb-3" src="<?php echo $data['attachments'][0]['image_url']; ?>">
 <?php if ($data['attachments'][0]['title'] == null || $data['attachments'][0]['image_url'] == null || $data['attachments'][0]['original_url'] == null){echo "";} else echo "<p>Click the link to read more:</p>" ?>
-    <a class="link" href="<?php echo $data['attachments'][0]['image_url']; ?>">
+    <a class="link" href="<?php echo $data['attachments'][0]['title_link']; ?>">
     <?php echo $data['attachments'][0]['original_url'] ?>
     </a>
     </div>
