@@ -8,8 +8,8 @@
 ### Getting Started
 ##### The application can be viewed via the following link: https://jn-kids-insights-challenge.herokuapp.com/ 
 ##### Feel free to clone the application using the command git clone on the following link: https://github.com/josephnewton861/json_data_challenge_php_version, 
-#####however Do NOT fork the repository!
+##### however Do NOT fork the repository!
 
-###Features
+### Features
 ##### The app is a static web page which displays the title, image and title link from a JSON file which is entered around news reports.
 ##### The app has this information displayed in a card for an increased user experience and following this if the user feels they want to click on the link for more information they can do so. 
