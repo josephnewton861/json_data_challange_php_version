@@ -1,5 +1,7 @@
 # JSON data extraction challenge app
 
+## Important: This project is no longer supported.
+
 ## Project Overview
 #### This project is my attempt at a technical challenge that was presented to me. It involves analysing JSON file and extracting out the relevant data to then present it on a web page. The app is application is built using PHP and XAMPP (local server used for PHP projects), which before starting the project I had not encountered either before. Other technologies used include CSS, Bootstrap and HTML. The app is hosted using Heroku. 
 
